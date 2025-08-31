@@ -17,6 +17,7 @@ import Subscribe from "./pages/subscription/Subscribe";
 import DoctorManagement from "./pages/admin/DoctorManagement";
 
 function ProtectedRoute({ component: Component, ...props }) {
+  //added this comment
   const { isAuthenticated, loading } = useAuth();
   
   if (loading) {
